@@ -39,9 +39,9 @@ const services = [
   'Print design',
 ];
 
-const email = 'ajetomobibethel2009@gmail.com';
-const phone = '08085678680';
-const whatsapp = '09017838364';
+const email = 'Oluwafikunayomioriola20@gmail.com';
+const phone = '+2349024878986';
+const whatsapp = '+2349024878986';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -52,8 +52,12 @@ export default function App() {
     <div className="site-shell">
       <header className="topbar">
         <a className="wordmark brand-wordmark" href="#home" aria-label="Abba's Own Designs home">
-          <span className="brand-fallback-mark" aria-hidden="true">A<span>.</span></span>
-          <span>ABBA'S OWN DESIGNS</span>
+          <img
+            src={`${import.meta.env.BASE_URL}images/abbas-logo.png`}
+            alt="Abba's Own Designs logo"
+            className="brand-logo"
+          />
+          <span>ABBAH'S OWN DESIGNS</span>
           {/* When the logo is ready, replace the two spans above with:
           <img src="/abbas-own-designs-logo.png" alt="Abba's Own Designs" className="brand-logo" />
           Then place the image at public/abbas-own-designs-logo.png.
@@ -139,11 +143,30 @@ export default function App() {
               <a className="email-link" href={`mailto:${email}`}><Mail size={18} /> {email} <ArrowUpRight size={18} /></a>
               <a className="email-link contact-method" href={`tel:${phone}`}><Phone size={18} /> {phone} <ArrowUpRight size={18} /></a>
               <a className="email-link contact-method" href={`https://wa.me/234${whatsapp.slice(1)}`} target="_blank" rel="noreferrer"><MessageCircle size={18} /> WhatsApp <ArrowUpRight size={18} /></a>
-              <div className="social-links"><a href="https://www.instagram.com/bethel_triumph/" aria-label="Instagram" target="_blank" rel="noreferrer">◎</a></div>
+              <div className="social-links">
+                <a
+                  href="https://www.instagram.com/abbasowndesigns?srtk=bWQ2N3k1cHQ2ZXBy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="social-icon">◎</span>
+                  <span>Instagram</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/oluwafikayomi-oriola-7ab252421?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="social-icon">in</span>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+
             </div>
             <div className="contact-form contact-links-panel">
               <p>For project enquiries, reach out through any of the contact options.</p>
-              <a className="submit-button" href={`mailto:${email}`}>Email Abba's Own Designs <ArrowUpRight size={17} /></a>
+              <a className="submit-button" href={`mailto:${email}`}>Email Abbah's Own Designs <ArrowUpRight size={17} /></a>
               <a className="submit-button" href={`https://wa.me/234${whatsapp.slice(1)}`} target="_blank" rel="noreferrer">Start a WhatsApp chat <ArrowUpRight size={17} /></a>
             </div>
           </div>
@@ -175,7 +198,11 @@ export default function App() {
         </div>
       )}
 
-      <footer className="footer section-wrap"><a className="wordmark brand-wordmark" href="#home"><span className="brand-fallback-mark" aria-hidden="true">A<span>.</span></span><span>ABBA'S OWN DESIGNS</span></a><span>DESIGNED WITH INTENTION © 2026</span><a href="#home">BACK TO TOP ↑</a></footer>
+      <footer className="footer section-wrap"><a className="wordmark brand-wordmark" href="#home"><img
+        src={`${import.meta.env.BASE_URL}images/abbas-logo.png`}
+        alt="Abba's Own Designs logo"
+        className="brand-logo"
+      /></a><span>Triumph Wed Dev © 2026</span><a href="#home">BACK TO TOP ↑</a></footer>
     </div>
   );
 }
