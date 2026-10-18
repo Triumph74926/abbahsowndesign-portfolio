@@ -5,27 +5,27 @@ import { ArrowDownRight, ArrowUpRight, Menu, X, Sparkles, Mail, Phone, MessageCi
 const projects = [
   {
     number: '01', name: 'Swift Bite', type: 'Brand identity · Digital design',
-    image: 'public/images/WhatsApp Image 2026-10-18 at 2.44.22 AM.jpeg',
+    image: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.44.22 AM.jpeg`,
     className: 'project-tidemint', description: 'A fresh visual language for a food company.'
   },
   {
     number: '02', name: 'CLSFN', type: 'Flyer design · E-flyer',
-    image: 'public/images/WhatsApp Image 2026-10-18 at 2.45.57 AM.jpeg',
+    image: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.45.57 AM.jpeg`,
     className: 'project-lumera', description: 'A spirit filled design built for a church program.'
   },
   {
     number: '03', name: 'OrbitPay', type: 'Poster design · Advertisement design',
-    image: 'public/images/WhatsApp Image 2026-10-18 at 2.46.55 AM.jpeg',
+    image: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.46.55 AM.jpeg`,
     className: 'project-jumai', description: 'A vibrant poster design for a freelancing company.'
   },
   {
     number: '04', name: 'New Month', type: 'Social Media design · New month design',
-    image: 'public/images/WhatsApp Image 2026-10-18 at 2.47.39 AM.jpeg',
+    image: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.47.39 AM.jpeg`,
     className: 'project-eventflow', description: 'A design celebrating the independence of Nigeria.'
   },
   {
     number: '05', name: 'AeroSpace', type: 'Product design · Visual system',
-    image: 'public/images/WhatsApp Image 2026-10-18 at 2.47.39 AM (1).jpeg',
+    image: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.47.39 AM (1).jpeg`,
     className: 'project-eventflow', description: 'A design for an aeroplane brand.'
   },
 ];
