@@ -118,7 +118,7 @@ export default function App() {
           <div className="about-content">
             <h2>Design is more than how it <span className="blue-word">looks.</span><br />It's how it <span className="muted-word">makes you feel.</span></h2>
             <div className="about-lower">
-              <div className="about-photo"><img src="public/images/WhatsApp Image 2026-10-18 at 2.52.06 AM.jpeg" alt="Portrait placeholder for the designer" loading="lazy" /><span>THE PERSON BEHIND THE PIXELS</span></div>
+              <div className="about-photo"><img src={`${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.52.06 AM.jpeg`} alt="Portrait placeholder for the designer" loading="lazy" /><span>THE PERSON BEHIND THE PIXELS</span></div>
               <div className="about-text"><p className="large-copy">I’m a graphic designer and visual storyteller who enjoys turning complex ideas into clear, memorable experiences.</p><p>From shaping a brand’s first impression to creating digital visuals that feel easy to use, I care about the details and the bigger picture. I believe good design should feel considered, useful, and unmistakably human.</p><a className="text-link" href="#contact">Any questions about me? <ArrowUpRight size={16} /></a></div>
             </div>
           </div>
