@@ -103,7 +103,7 @@ export default function App() {
           </div>
 
           <div className="metric">
-            <h3>3+</h3>
+            <h3>2+</h3>
             <p>Years Experience</p>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function App() {
                 </div>
 
                 <div className="photo-metric photo-metric-years">
-                  <h3>3+</h3>
+                  <h3>2+</h3>
                   <p>Years<br />Experience</p>
                 </div>
               </div>
