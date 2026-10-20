@@ -85,7 +85,7 @@ export default function App() {
           </div>
           <div className="hero-bottom">
             <a href="#work" className="round-link" aria-label="Scroll to selected work"><ArrowDownRight size={21} /></a>
-            <p>SCROLL TO EXPLORE<br /><span>SELECTED WORK · 2022—2025</span></p>
+            <p>SCROLL TO EXPLORE<br /><span>SELECTED WORK · 2024—2026</span></p>
             <div className="hero-index">01 <span>—</span> 05</div>
           </div>
           <div className="hero-orbit" aria-hidden="true"><span className="orbit-ring ring-one"/><span className="orbit-ring ring-two"/><span className="orbit-core">A<span>.</span></span><span className="orbit-label">DESIGN<br />WITH INTENT</span></div>
