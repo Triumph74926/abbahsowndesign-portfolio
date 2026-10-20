@@ -289,7 +289,7 @@ export default function App() {
             <div className="contact-form contact-links-panel">
               <p>For project enquiries, reach out through any of the contact options.</p>
               <a className="submit-button" href={`mailto:${email}`}>Email Abbah's Own Designs <ArrowUpRight size={17} /></a>
-              <a className="submit-button" href={`https://wa.me/234${whatsapp.slice(1)}`} target="_blank" rel="noreferrer">Start a WhatsApp chat <ArrowUpRight size={17} /></a>
+              <a className="submit-button" href={`https://wa.me/${whatsapp.slice(1)}`} target="_blank" rel="noreferrer">Start a WhatsApp chat <ArrowUpRight size={17} /></a>
             </div>
           </div>
         </section>
