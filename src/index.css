@@ -590,8 +590,8 @@ button, input, textarea { font: inherit; }
 .photo-metric {
   position: absolute;
   z-index: 2;
-  width: 118px;
-  min-height: 104px;
+  width: 100px;
+  min-height: 95px;
   padding: 16px 14px;
   border-radius: 12px;
   background: #171717;
