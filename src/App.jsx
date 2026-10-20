@@ -9,7 +9,7 @@ const projects = [
     className: 'project-tidemint', description: 'A fresh visual language for a food company.'
   },
   {
-    number: '02', name: 'CLSFN', type: 'Flyer design · E-flyer',
+    number: '02', name: 'CLASFON', type: 'Flyer design · E-flyer',
     image: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-10-18 at 2.45.57 AM.jpeg`,
     className: 'project-lumera', description: 'A spirit filled design built for a church program.'
   },
@@ -86,10 +86,27 @@ export default function App() {
           <div className="hero-bottom">
             <a href="#work" className="round-link" aria-label="Scroll to selected work"><ArrowDownRight size={21} /></a>
             <p>SCROLL TO EXPLORE<br /><span>SELECTED WORK · 2022—2025</span></p>
-            <div className="hero-index">01 <span>—</span> 04</div>
+            <div className="hero-index">01 <span>—</span> 05</div>
           </div>
           <div className="hero-orbit" aria-hidden="true"><span className="orbit-ring ring-one"/><span className="orbit-ring ring-two"/><span className="orbit-core">A<span>.</span></span><span className="orbit-label">DESIGN<br />WITH INTENT</span></div>
         </section>
+
+        <div className="metrics-row">
+          <div className="metric">
+            <h3>20+</h3>
+            <p>Projects Delivered</p>
+          </div>
+
+          <div className="metric">
+            <h3>15+</h3>
+            <p>Clients</p>
+          </div>
+
+          <div className="metric">
+            <h3>3+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
 
         <section className="work-section section-wrap" id="work">
           <div className="section-heading">
@@ -114,6 +131,28 @@ export default function App() {
               </article>
             ))}
           </div>
+
+          <div className="more-work-links">
+            <p>Explore more of my designs?</p>
+
+            <div className="more-work-buttons">
+              <a
+                href="https://www.instagram.com/abbasowndesigns?srtk=bWQ2N3k1cHQ2ZXBy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore Instagram <ArrowUpRight size={18} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/oluwafikayomi-oriola-7ab252421?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connect on LinkedIn <ArrowUpRight size={18} />
+              </a>
+            </div>
+          </div>
           <div className="work-footnote"><span>MORE WORK IS ALWAYS IN PROGRESS</span><span>✳</span></div>
         </section>
 
@@ -128,14 +167,76 @@ export default function App() {
           </div>
         </section>
 
+        <section className="experience-section section-wrap" id="experience">
+          <div className="section-heading">
+            <div>
+              <span className="eyebrow">03 / EXPERIENCE</span>
+              <h2>Where I've <span className="blue-word">worked.</span></h2>
+            </div>
+            <p>Design projects, creative collaborations, and the impact behind them.</p>
+          </div>
+
+          <div className="experience-list">
+            <article className="experience-item">
+              <div className="experience-date">May 2026 – Present</div>
+              <div className="experience-details">
+                <h3>Creative Brand Designer</h3>
+                <h4>CLASFON UI</h4>
+                <p>
+                  Commissioned to create flyers tailored to the organisation's
+                  services and themes. Produced 40+ flyers, contributing to
+                  approximately 20% social media engagement growth and increased
+                  membership.
+                </p>
+              </div>
+            </article>
+
+            <article className="experience-item">
+              <div className="experience-date">March 2026 – Present</div>
+              <div className="experience-details">
+                <h3>Creative Brand Designer</h3>
+                <h4>Redefining Narratives</h4>
+                <p>
+                  Created flyers for a nonprofit addressing sexual, mental,
+                  and emotional abuse. Designed materials for Redefining Week,
+                  testimonials, and Easter campaigns, producing 10+ flyers
+                  and contributing to approximately 15% social media engagement growth.
+                </p>
+              </div>
+            </article>
+
+            <article className="experience-item">
+              <div className="experience-date">June 2026</div>
+              <div className="experience-details">
+                <h3>Creative Brand Designer</h3>
+                <h4>CLASFON Nigeria Law School — Kano Campus</h4>
+                <p>
+                  Designed five flyers for a conference, including an anticipation
+                  flyer, three speaker flyers, and the main event flyer.
+                  The designs were described by the leadership as sleek and functional.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="skills-block">
+            <h3>Skills</h3>
+            <div className="skills-list">
+              <span>Leadership</span>
+              <span>Graphic Design</span>
+              <span>Team Management</span>
+            </div>
+          </div>
+        </section>
+
         <section className="services-section section-wrap" id="services">
-          <div className="section-heading"><div><span className="eyebrow">03 / WHAT I BRING</span><h2>Good ideas, <span className="blue-word">well made.</span></h2></div><p>From the first sketch to the final files, here's where I can help.</p></div>
+          <div className="section-heading"><div><span className="eyebrow">04 / WHAT I BRING</span><h2>Good ideas, <span className="blue-word">well made.</span></h2></div><p>From the first sketch to the final files, here's where I can help.</p></div>
           <div className="services-layout"><div className="services-intro"><p>Every project is different. The process starts by listening, asking the right questions, and finding the simplest way to make the idea stand out.</p><a className="text-link" href="#contact">Have a project in mind? <ArrowUpRight size={16} /></a></div>
             <div className="service-list">{services.map((service, i) => <div className="service-row" key={service}><span className="service-no">0{i + 1}</span><h3>{service}</h3><ArrowUpRight size={18} /></div>)}</div></div>
         </section>
 
         <section className="contact-section section-wrap" id="contact">
-          <div className="contact-top"><span className="eyebrow">04 / YOUR TURN</span><span className="contact-note">HAVE A GOOD ONE IN MIND? <span>✳</span></span></div>
+          <div className="contact-top"><span className="eyebrow">05 / YOUR TURN</span><span className="contact-note">HAVE A GOOD ONE IN MIND? <span>✳</span></span></div>
           <h2>Let's make<br />something <span className="blue-word">matter.</span></h2>
           <div className="contact-layout">
             <div className="contact-copy">
