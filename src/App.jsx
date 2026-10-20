@@ -41,7 +41,7 @@ const services = [
 
 const email = 'Oluwafikunayomioriola20@gmail.com';
 const phone = '+2349024878986';
-const whatsapp = '+2349024878986';
+const whatsapp = '29024878986';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
