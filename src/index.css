@@ -565,3 +565,120 @@ button, input, textarea { font: inherit; }
     font-size: 0.8rem;
   }
 }
+
+
+/* Floating metrics on the About portrait */
+.about-photo {
+  position: relative;
+  isolation: isolate;
+}
+
+.about-photo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-photo-label {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1;
+}
+
+.photo-metric {
+  position: absolute;
+  z-index: 2;
+  width: 118px;
+  min-height: 104px;
+  padding: 16px 14px;
+  border-radius: 12px;
+  background: #171717;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.photo-metric-projects {
+  top: 0;
+  left: 0;
+  transform: translate(-12%, 0);
+}
+
+.photo-metric-years {
+  right: 0;
+  bottom: 0;
+  transform: translate(12%, 0);
+  background: #171717;
+}
+
+.photo-metric h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.photo-metric p {
+  margin: 0;
+  color: #e0e0f0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.photo-metric:hover {
+  border-color: #d4af37;
+  box-shadow: 0 16px 34px rgba(212, 175, 55, 0.2);
+}
+
+.photo-metric-projects:hover {
+  transform: translate(-12%, -6px);
+}
+
+.photo-metric-years:hover {
+  transform: translate(12%, -6px);
+}
+
+@media (max-width: 600px) {
+  .photo-metric {
+    width: 96px;
+    min-height: 88px;
+    padding: 12px 10px;
+    border-radius: 9px;
+  }
+
+  .photo-metric h3 {
+    font-size: 1.65rem;
+  }
+
+  .photo-metric p {
+    font-size: 0.7rem;
+  }
+
+  .photo-metric-projects {
+    transform: translate(-4%, 0);
+  }
+
+  .photo-metric-years {
+    transform: translate(4%, 0);
+  }
+
+  .photo-metric-projects:hover {
+    transform: translate(-4%, -4px);
+  }
+
+  .photo-metric-years:hover {
+    transform: translate(4%, -4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-metric {
+    transition: none;
+  }
+}
